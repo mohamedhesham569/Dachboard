@@ -1,113 +1,289 @@
-import Image from "next/image";
+ "use client";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
-}
+ import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+ import { tokens } from "../theme";
+ import { mockTransactions } from "../data/mocdata";
+ import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
+ import EmailIcon from "@mui/icons-material/Email";
+ import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
+ import PersonAddIcon from "@mui/icons-material/PersonAdd";
+ import TrafficIcon from "@mui/icons-material/Traffic";
+ import LineChart from "@/components/Line";
+ import GeographyChart from "@/components/geo";
+ import BarChart from "@/components/Bar";
+ import StatBox from "@/components/StatBox";
+ import ProgressCircle from "@/components/ProgressCircle";
+ 
+ const Home = () => {
+   const theme = useTheme();
+   const colors = tokens(theme.palette.mode);
+ 
+   return (
+     <Box m="20px">
+       {/* HEADER */}
+       <Box display="flex" justifyContent="space-between" alignItems="center">
+         <div className="header mb-5">
+          <h1>Dashboard</h1>
+          <p>Welcome to your dashboard</p>
+         </div>
+ 
+         <Box>
+           <Button
+             sx={{
+               backgroundColor: colors.blueAccent[700],
+               color: colors.grey[100],
+               fontSize: "14px",
+               fontWeight: "bold",
+               padding: "10px 20px",
+             }}
+           >
+             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
+             Download Reports
+           </Button>
+         </Box>
+       </Box>
+ 
+       {/* GRID & CHARTS */}
+       <Box
+         display="grid"
+         gridTemplateColumns="repeat(12, 1fr)"
+         gridAutoRows="140px"
+         gap="20px"
+       >
+         {/* ROW 1 */}
+         <Box
+           gridColumn="span 3"
+           backgroundColor={colors.primary[400]}
+           display="flex"
+           alignItems="center"
+           justifyContent="center"
+         >
+           <StatBox
+             title="12,361"
+             subtitle="Emails Sent"
+             progress="0.75"
+             increase="+14%"
+             icon={
+               <EmailIcon
+                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+               />
+             }
+           />
+         </Box>
+         <Box
+           gridColumn="span 3"
+           backgroundColor={colors.primary[400]}
+           display="flex"
+           alignItems="center"
+           justifyContent="center"
+         >
+           <StatBox
+             title="431,225"
+             subtitle="Sales Obtained"
+             progress="0.50"
+             increase="+21%"
+             icon={
+               <PointOfSaleIcon
+                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+               />
+             }
+           />
+         </Box>
+         <Box
+           gridColumn="span 3"
+           backgroundColor={colors.primary[400]}
+           display="flex"
+           alignItems="center"
+           justifyContent="center"
+         >
+           <StatBox
+             title="32,441"
+             subtitle="New Clients"
+             progress="0.30"
+             increase="+5%"
+             icon={
+               <PersonAddIcon
+                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+               />
+             }
+           />
+         </Box>
+         <Box
+           gridColumn="span 3"
+           backgroundColor={colors.primary[400]}
+           display="flex"
+           alignItems="center"
+           justifyContent="center"
+         >
+           <StatBox
+             title="1,325,134"
+             subtitle="Traffic Received"
+             progress="0.80"
+             increase="+43%"
+             icon={
+               <TrafficIcon
+                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+               />
+             }
+           />
+         </Box>
+ 
+         {/* ROW 2 */}
+         <Box
+           gridColumn="span 8"
+           gridRow="span 2"
+           backgroundColor={colors.primary[400]}
+         >
+           <Box
+             mt="25px"
+             p="0 30px"
+             display="flex "
+             justifyContent="space-between"
+             alignItems="center"
+           >
+             <Box>
+               <Typography
+                 variant="h5"
+                 fontWeight="600"
+                 color={colors.grey[100]}
+               >
+                 Revenue Generated
+               </Typography>
+               <Typography
+                 variant="h3"
+                 fontWeight="bold"
+                 color={colors.greenAccent[500]}
+               >
+                 $59,342.32
+               </Typography>
+             </Box>
+             <Box>
+               <IconButton>
+                 <DownloadOutlinedIcon
+                   sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
+                 />
+               </IconButton>
+             </Box>
+           </Box>
+           <Box height="250px" m="-20px 0 0 0">
+             <LineChart isDashboard={true} />
+           </Box>
+         </Box>
+         <Box
+           gridColumn="span 4"
+           gridRow="span 2"
+           backgroundColor={colors.primary[400]}
+           overflow="auto"
+         >
+           <Box
+             display="flex"
+             justifyContent="space-between"
+             alignItems="center"
+             borderBottom={`4px solid ${colors.primary[500]}`}
+             colors={colors.grey[100]}
+             p="15px"
+           >
+             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
+               Recent Transactions
+             </Typography>
+           </Box>
+           {mockTransactions.map((transaction, i) => (
+             <Box
+               key={`${transaction.txId}-${i}`}
+               display="flex"
+               justifyContent="space-between"
+               alignItems="center"
+               borderBottom={`4px solid ${colors.primary[500]}`}
+               p="15px"
+             >
+               <Box>
+                 <Typography
+                   color={colors.greenAccent[500]}
+                   variant="h5"
+                   fontWeight="600"
+                 >
+                   {transaction.txId}
+                 </Typography>
+                 <Typography color={colors.grey[100]}>
+                   {transaction.user}
+                 </Typography>
+               </Box>
+               <Box color={colors.grey[100]}>{transaction.date}</Box>
+               <Box
+                 backgroundColor={colors.greenAccent[500]}
+                 p="5px 10px"
+                 borderRadius="4px"
+               >
+                 ${transaction.cost}
+               </Box>
+             </Box>
+           ))}
+         </Box>
+ 
+         {/* ROW 3 */}
+         <Box
+           gridColumn="span 4"
+           gridRow="span 2"
+           backgroundColor={colors.primary[400]}
+           p="30px"
+         >
+           <Typography variant="h5" fontWeight="600">
+             Campaign
+           </Typography>
+           <Box
+             display="flex"
+             flexDirection="column"
+             alignItems="center"
+             mt="25px"
+           >
+             <ProgressCircle size="125" />
+             <Typography
+               variant="h5"
+               color={colors.greenAccent[500]}
+               sx={{ mt: "15px" }}
+             >
+               $48,352 revenue generated
+             </Typography>
+             <Typography>Includes extra misc expenditures and costs</Typography>
+           </Box>
+         </Box>
+         <Box
+           gridColumn="span 4"
+           gridRow="span 2"
+           backgroundColor={colors.primary[400]}
+         >
+           <Typography
+             variant="h5"
+             fontWeight="600"
+             sx={{ padding: "30px 30px 0 30px" }}
+           >
+             Sales Quantity
+           </Typography>
+           <Box height="250px" mt="-20px">
+             <BarChart isDashboard={true} />
+           </Box>
+         </Box>
+         <Box
+           gridColumn="span 4"
+           gridRow="span 2"
+           backgroundColor={colors.primary[400]}
+           padding="30px"
+         >
+           <Typography
+             variant="h5"
+             fontWeight="600"
+             sx={{ marginBottom: "15px" }}
+           >
+             Geography Based Traffic
+           </Typography>
+           <Box height="200px">
+             <GeographyChart isDashboard={true} />
+           </Box>
+         </Box>
+       </Box>
+     </Box>
+   );
+ };
+ 
+ export default Home;
+ 

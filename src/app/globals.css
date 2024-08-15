@@ -1,33 +1,55 @@
+/* html,body,.App,#root{
+  width: 100%;
+  height: 100%;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.App{
+  display: flex;
+  position: relative;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar-thumb{
+  background-color: #888;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar{
+  width: 10px;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar-track{
+  background-color: #e0e0e0;
+}
+::-webkit-scrollbar-track:hover{
+  background-color: #555;
+}
+.user-image{
+  width: 100px;
+  height: fit-content;
+  border-radius: 50%
+}
+.active{
+  color: #6870fa!important;
+}
+.active .icon{
+  color: #6870fa!important;
+}
+.box:hover{
+  color: #868dfb!important;
+}
+.box:hover .icon{
+  color: #868dfb!important;
+}
+.cato{
+  color: gray;
+}
+.header{
+  margin: 20px 0 ;
+}
+.header h1{
+  font-size: 25px;
+  font-weight: bolder;
+}
+.header p{
+  font-size: 13px;
+  color: #4cceac;
 }
