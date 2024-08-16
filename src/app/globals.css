@@ -62,3 +62,6 @@
 .MuiTypography-h3{
   font-size: 35px !important; 
 }
+.MuiSvgIcon-root{
+  margin-bottom:10px;
+}
